@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                   Foundation Preparatory Academy
                 </div>
 
                 <div class="links">
