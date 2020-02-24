@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
-    public function(){
+    public function index()
+    {
         return view('pages.admins.index');
     }
+
 }
