@@ -47,7 +47,7 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="img/foundation/pict_large.gif" alt="Imperial">
+          <img class="" src="img/foundation/pict_large.gif" style="height:350px; width:auto " alt="Imperial">
         </div>
 
         <h1>Welcome to Foundation Preparatory Academy</h1>
