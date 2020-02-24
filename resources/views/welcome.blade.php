@@ -47,10 +47,10 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="img/logo.png" alt="Imperial">
+          <img class="" src="img/foundation/pict_large.gif" alt="Imperial">
         </div>
 
-        <h1>Welcome to Imperial studios</h1>
+        <h1>Welcome to Foundation Preparatory Academy</h1>
         <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
@@ -187,23 +187,6 @@
           <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
           <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
           <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==========================
-  Subscrbe Section
-  ============================-->
-  <section id="subscribe">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-8">
-          <h3 class="subscribe-title">Subscribe For Updates</h3>
-          <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
-        </div>
-        <div class="col-md-4 subscribe-btn-container">
-          <a class="subscribe-btn" href="#">Subscribe Now</a>
         </div>
       </div>
     </div>
