@@ -12,7 +12,7 @@ class Courses extends Model
 
     public function courses()
     {
-        return $thhis->hasOne('App\User','id');
+        return $thhis->hasOne('App\Students','course_id');
     }
 
 

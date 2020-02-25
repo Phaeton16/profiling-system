@@ -10,6 +10,6 @@ class Level extends Model
 
     public function Level()
     {
-        return $this->hasOne('App\User' ,'id');
+        return $this->hasOne('App\Students','level_id');
     }
 }

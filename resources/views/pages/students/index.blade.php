@@ -42,8 +42,8 @@
               @foreach($data ?? '' as $value)
                 <tr>
                   <td>{{$value->lname}},{{$value->fname}},{{$value->mname}}</td>
-                  <td>{{$value->level_id}}</td>
-                  <td>{{$value->course_id}}</td>
+                  <td>{{$value->getLevels->name}}</td>
+                  <td>{{$value->getCourses->name}}</td>
                   <td class='text-right'>
 
                     <div class="an-settings-button pull-right" style="border: transparent;">

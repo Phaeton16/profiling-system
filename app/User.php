@@ -38,16 +38,4 @@ class User extends Authenticatable
     ];
     
 
-    public function gender()
-    {
-        return $this->belongsTo('App\Gender','id');
-    }
-    public function courses()
-    {
-        return $this->belongsTo('App\Courses' ,'id');
-    }
-    public function level()
-    {
-        return $this->belongsTo('App\Level','id');
-    }
 }
