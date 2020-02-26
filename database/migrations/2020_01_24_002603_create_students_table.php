@@ -46,9 +46,9 @@ class CreateStudentsTable extends Migration
      */
     public function down()
     {
-       // Schemma::table('students', function(Blueprint $table) {
-         //   $table->dropForeign(['gender_id', 'course_id', 'level_id']);
-        //});
+        // Schemma::table('students', function(Blueprint $table) {
+        //     $table->dropForeign(['gender_id', 'course_id', 'level_id']);
+        // });
         Schema::dropIfExists('students');
     }
 }
