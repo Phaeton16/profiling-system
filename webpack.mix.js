@@ -62,3 +62,5 @@ mix.copyDirectory([
 ], 'public/img');
 
 
+mix.copyDirectory('AdminLTe/plugins/fontawesome-free/webfonts', 'public/webfonts');
+
