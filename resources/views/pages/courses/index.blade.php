@@ -62,7 +62,7 @@
                       &nbsp; Unpost
                     </button>
 
-                    <a href="{{ route('testimony.edit', $value->id)}}" class="btn btn-primary">
+                    <a href="{{ route('.edit', $value->id)}}" class="btn btn-primary">
                       <i class="fas fa-edit"></i>
                       &nbsp;Edit
                     </a>

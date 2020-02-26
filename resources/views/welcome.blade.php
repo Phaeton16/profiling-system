@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="utf-8">
-  <title>Imperial Boootstrap Template</title>
+  <title>Foundation Preparatory Academy</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -77,10 +77,10 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
@@ -96,7 +96,7 @@
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="#contact">Contact Us</a></li>
           <li><a href="{{route('login')}}">Login</a></li>
         </ul>
@@ -151,7 +151,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Our Services</h3>
+          <h3 class="section-title">FPA's Life View</h3>
           <div class="section-title-divider"></div>
           <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         </div>
@@ -161,22 +161,28 @@
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
           <h4 class="service-title"><a href="">Vision</a></h4>
-          <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          <p class="service-description">FPA longs to foster life learners by empowering students to acquire, develop, exhibit, communicate and value knowledge and skills that will support them in meeting the demands of the technologically and globally competitive status quo.</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
           <h4 class="service-title"><a href="">Mission</a></h4>
-          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          <p class="service-description">To equip students with access to meaningful learning experiences for them to learn, excel, contribute and succeed in this constantly changing society thus allowing them to hone their fields of interest to become life-ready individuals.</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
           <h4 class="service-title"><a href="">Life Purpose</a></h4>
-          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          <p class="service-description">The life purpose of Foundation Preparatory Academy is to educate and develop individuals to become productive, creative, useful and responsible citizens of the society.</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-photo"></i></div>
           <h4 class="service-title"><a href="">Core Values</a></h4>
-          <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <br>
+          <ul class="service-description">
+            <li>Excellence</li>
+            <li>Commitment</li>
+            <li>Integrity</li>
+            <li>Service</li>
+          </ul>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-road"></i></div>
@@ -195,7 +201,7 @@
   <!--==========================
   Porfolio Section
   ============================-->
-  <section id="portfolio">
+  <!-- <section id="portfolio">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
@@ -280,7 +286,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--==========================
   Testimonials Section
@@ -405,7 +411,7 @@
   <!--==========================
   Contact Section
   ============================-->
-  <section id="contact">
+  <!-- <section id="contact">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
@@ -464,7 +470,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--==========================
   Footer
