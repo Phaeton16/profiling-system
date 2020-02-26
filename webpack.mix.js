@@ -54,7 +54,7 @@ mix.scripts([
     'AdminLTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js',
     'AdminLTE/dist/js/adminlte.js',
     'AdminLTE/dist/js/demo.js'
-], 'public/js');
+], 'public/js/all.js');
 
 mix.copyDirectory([
     'imperial/img',
