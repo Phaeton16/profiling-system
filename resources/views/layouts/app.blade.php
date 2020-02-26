@@ -28,6 +28,10 @@
 </head>
 
 <body body class="hold-transition sidebar-mini layout-fixed">
+    @guest
+    @yield('content')
+    @endguest
+    @auth
     <div class="wrapper">
         @include('shared.header')
         @include('shared.sidebar')
@@ -36,6 +40,7 @@
         </div>
         @include('shared.footer')
     </div>
+    @endauth
    
 
     
