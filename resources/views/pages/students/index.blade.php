@@ -2,7 +2,7 @@
 
 @section('content')
 
-@if(session()->has('save'))
+<!-- @if(session()->has('save'))
   <div class="row" id="save">
     <div class="alert alert-success">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -18,7 +18,7 @@
       <strong>Notification:</strong>{{ session()->get('edit') }}
     </div>
   </div>
-@endif
+@endif -->
 
 <div class="container-fluid">
   <div class="card">
@@ -41,7 +41,7 @@
               <tbody>
               @foreach($data ?? '' as $value)
                 <tr>
-                  <td>{{$value->lname}},{{$value->fame}},{{$value->mname}}</td>
+                  <td>{{$value->lname}},{{$value->fname}},{{$value->mname}}</td>
                   <td>{{$value->level_id}}</td>
                   <td>{{$value->course_id}}</td>
                   <td class='text-right'>

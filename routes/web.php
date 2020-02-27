@@ -19,6 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+<<<<<<< HEAD
+=======
 //students
 Route::get('students-list', 'StudentsController@index')->name('students.list');
 Route::get('students-create', 'StudentsController@create')->name('students.create');
@@ -27,5 +29,6 @@ Route::get('students-edit', 'StudentsController@edit')->name('students.edit');
 Route::post('students-update', 'StudentsController@update')->name('students.update');
 Route::post('students-delete', 'StudentsController@delete')->name('students.delete');
 
+>>>>>>> 62f2def2449a2d504bd1751f2ec65ea875c83382
 
 

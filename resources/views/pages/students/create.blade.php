@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container-fluid">
-    <form method="post" action="{{ route('students-store') }}">
+    <form method="post" action="{{ route('students.store') }}">
 		<div class="row justify-content-center">
 		    <div class="col-md-6">
 		        <div class="card card-primary">
@@ -49,7 +49,7 @@
 									<div class="input-group-prepend">
 									<span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
 									</div>
-									<input type="text" class="form-control" name="birth_date" data-inputmask-alias="dd/mm/yyyy" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" im-insert="false" placeholder="dd/mm/yyyy">
+									<input type="date" class="form-control" name="birth_date">
 								</div>
 							</div>
 							<div class="form-group">
@@ -65,7 +65,7 @@
 	                        </select>
 							<div class="form-group">
 								<label for="course"><i class="text-danger">*</i>Course:</label>
-								<select class="form-control" name="courses_id" value="{{old('courses_id')}}">
+								<select class="form-control" name="course_id" value="{{old('course_id')}}">
 	                            @foreach($courses as $g)
 	                            <option value="{{$g->id}}">{{$g->name}}</option>
 	                            @endforeach
