@@ -10,7 +10,7 @@ class Genders extends Model
     
     public function Genders()
     {
-        return $this->hasOne('App\User' ,'id');
+        return $this->hasOne('App\Students','gender_id');
     }
 
 }

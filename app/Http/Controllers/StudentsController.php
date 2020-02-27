@@ -12,7 +12,9 @@ class StudentsController extends Controller
 {
     public function index()
     {
-        $data = Students::get();
+        $data = Students::with(['getLevels','getCourses'])->get();
+                        // ->with('courses')
+                        // ->get();
         // dd($data);
         return view ('pages.students.index', compact('data'));
     }
