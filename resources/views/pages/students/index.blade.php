@@ -33,15 +33,17 @@
               <thead>
                   <tr class="text-center">
                       <th>Name</th>
+                      <th>Level</th>
                       <th>Course</th>
                       <th>Action</th>
                   </tr>
               </thead>
               <tbody>
-              
+              @foreach($data ?? '' as $value)
                 <tr>
-                  <td></td>
-                  <td></td>
+                  <td>{{$value->lname}},{{$value->fame}},{{$value->mname}}</td>
+                  <td>{{$value->level_id}}</td>
+                  <td>{{$value->course_id}}</td>
                   <td class='text-right'>
 
                     <div class="an-settings-button pull-right" style="border: transparent;">
@@ -60,7 +62,7 @@
                     </div>
                   </td>
                 </tr>
-              
+                @endforeach
               </tbody>
           </table>
       </div>

@@ -4,13 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Genders extends Model
+class Level extends Model
 {
-    protected $table = 'genders';
-    
-    public function Genders()
+    protected $table = 'levels';
+
+    public function Level()
     {
         return $this->hasOne('App\User' ,'id');
     }
-
 }

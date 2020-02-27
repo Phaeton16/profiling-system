@@ -15,13 +15,9 @@ class User extends Authenticatable
      *
      * @var array
      */
-<<<<<<< HEAD
-    protected $fillable = ['firstname','middlename', 'lastname','email','password'];
-=======
     protected $fillable = [
         'email','password',
     ];
->>>>>>> 785912f7c9b89b312c26737034776706380016e9
 
     /**
      * The attributes that should be hidden for arrays.
@@ -44,10 +40,14 @@ class User extends Authenticatable
 
     public function gender()
     {
-        return $this->belongsTo('App\Gender');
+        return $this->belongsTo('App\Gender','id');
     }
     public function courses()
     {
-        return $this->belongsTo('App\Courses');
+        return $this->belongsTo('App\Courses' ,'id');
+    }
+    public function level()
+    {
+        return $this->belongsTo('App\Level','id');
     }
 }

@@ -7,11 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Courses extends Model
 {
     protected $table = 'courses';
-    protected $fillable = 'name';
+
+    // protected $fillable = 'name';
 
     public function courses()
     {
-        return $thhis->hasOne('App\User');
+        return $thhis->hasOne('App\User','id');
     }
 
 
