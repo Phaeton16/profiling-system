@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); 
 });
 
 Auth::routes();
@@ -34,5 +34,13 @@ Route::post('users-store', 'UsersController@store')->name('users.store');
 Route::get('users-edit', 'UsersController@edit')->name('users.edit');
 Route::post('users-update', 'UsersController@update')->name('users.update');
 Route::post('users-delete', 'UsersController@delete')->name('users.delete');
+
+//courses
+Route::get('courses-list', 'CoursesController@index')->name('courses.list');
+Route::get('courses-create', 'CoursesController@create')->name('courses.create');
+Route::post('courses-store', 'CoursesController@store')->name('courses.store');
+Route::get('courses-edit', 'CoursesController@edit')->name('courses.edit');
+Route::post('courses-update', 'CoursesController@update')->name('courses.update');
+Route::post('courses-delete', 'CoursesController@delete')->name('courses.delete');
 
 
