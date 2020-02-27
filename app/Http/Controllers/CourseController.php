@@ -8,7 +8,7 @@ class CourseController extends Controller
 {
     public function index()
     {
-        $data = Courses::with(['getCourses'])
+        $data = Courses::all();
 
         return view('pages.courses.index', compact('data'));
     }
@@ -16,10 +16,6 @@ class CourseController extends Controller
     public function create() 
     {
         return view('pages.courses.create');
-
-        $data = Courses::all();
-
-    
 
     }
 
