@@ -9,6 +9,11 @@ class Courses extends Model
     protected $table = 'courses';
     protected $fillable = 'name';
 
+    public function courses()
+    {
+        return $thhis->hasOne('App\User');
+    }
+
 
 
 }
