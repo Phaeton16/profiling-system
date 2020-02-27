@@ -23,51 +23,38 @@
 <div class="container-fluid">
   <div class="card">
       <div class="card-header">
-          <a href="{{route('testimony.create')}}" class="btn btn-primary">
-			<i class="fas fa-user-plus"></i>&nbsp;Add Testimonial
+          <a href="{{route('students.create')}}" class="btn btn-primary">
+			<i class="fas fa-user-plus"></i>&nbsp;Add Students
 		</a>
       </div>
       <!-- /.card-header -->
       <div class="card-body">
-          <table class="table table-bordered table-hover" id="testimonial-table">
+          <table class="table table-bordered table-hover" id="students-table">
               <thead>
                   <tr class="text-center">
-                      <th>Date</th>
-                      <th>Tittle</th>
-                      <th>Stats</th>
+                      <th>Name</th>
+                      <th>Level</th>
+                      <th>Course</th>
                       <th>Action</th>
                   </tr>
               </thead>
               <tbody>
               @foreach($data ?? '' as $value)
                 <tr>
-                  <td>{{$value->created_at->format('M-d-Y')}}</td>
-                  <td>{{$value->title}}</td>
-                  <td>
-                    <input type="hidden" name="testimonyStatus" value="{{$value->post_status}}">
-                    <span class="badge badge-primary postedSpan">Posted</span>
-                    <span class="badge badge-primary unpostedSpan">Unpost</span>
-                  </td>
+                  <td>{{$value->lname}},{{$value->fame}},{{$value->mname}}</td>
+                  <td>{{$value->level_id}}</td>
+                  <td>{{$value->course_id}}</td>
                   <td class='text-right'>
 
                     <div class="an-settings-button pull-right" style="border: transparent;">
 
-                    <button class="btn btn-success postButton" onclick="postTestimony({{$value->id}})">
-                      <i class="fas fa-check-square"></i> 
-                      &nbsp; Post
-                    </button>
-
-                    <button class="btn btn-success unpostButton" onclick="unpostTestimony({{$value->id}})">
-                      <i class="fas fa-check-square"></i> 
-                      &nbsp; Unpost
-                    </button>
-
-                    <a href="{{ route('testimony.edit', $value->id)}}" class="btn btn-primary">
+                   
+                    <a href="" class="btn btn-primary">
                       <i class="fas fa-edit"></i>
                       &nbsp;Edit
                     </a>
 
-                    <button class="btn btn-danger delete-news" onclick="deleteTestimony ({{ $value->id }})">
+                    <button class="btn btn-danger delete-news" >
                       <i class="fas fa-trash"></i>
                       &nbsp;Delete
                     </button>
@@ -75,7 +62,7 @@
                     </div>
                   </td>
                 </tr>
-              @endforeach
+                @endforeach
               </tbody>
           </table>
       </div>
