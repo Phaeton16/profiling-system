@@ -50,11 +50,13 @@
                       <i class="fas fa-edit"></i>
                       &nbsp;Edit
                     </a>
+                    <form method="POST" action="{{route('courses.delete', $value->id) }}">
+                          {{ csrf_field() }}
 
-                    <button class="btn btn-danger delete-news">
-                      <i class="fas fa-trash"></i>
-                      &nbsp;Delete
-                    </button>
+                          <div class="form-group">
+                              <input type="submit" class="btn btn-danger delete-user" value="Delete user">
+                          </div>
+                      </form>
                   
                     </div>
                   </td>

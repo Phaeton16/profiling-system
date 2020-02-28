@@ -34,7 +34,27 @@ class CourseController extends Controller
 
     public function edit($id) 
     {
+        $data = Courses::findOrFail($id);
+      
+        return view('pages.courses.edit', compact('data'));
 
+
+
+    }
+
+    public function update(Request $request, $id)
+    {
+        Courses::where('id', $id)->update($request->except(['_method','_token']));
+        session()->flash('edit','Record Succesfully Edited. ');
+        return redirect()->route('courses.list');
+    }
+
+    public function destroy($id) {
+
+       $data =  Courses::findOrFail($id);
+       $data->delete();
+       session()->flash('edit','Record Succesfully Deleted. ');
+        return redirect()->route('courses.list');
 
     }
 }

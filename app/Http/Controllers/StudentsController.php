@@ -41,7 +41,7 @@ class StudentsController extends Controller
         return redirect()->route('students.list');
 
     }
-    public function edit($id)
+    public function edit($id)   
     {
         $data = Students::findOrFail($id);
         $gender = Genders::all();
