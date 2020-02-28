@@ -27,6 +27,13 @@ Route::get('students-edit', 'StudentsController@edit')->name('students.edit');
 Route::post('students-update', 'StudentsController@update')->name('students.update');
 Route::post('students-delete', 'StudentsController@delete')->name('students.delete');
 
+//users
+Route::get('users-list', 'UsersController@index')->name('users.list');
+Route::get('users-create', 'UsersController@create')->name('users.create');
+Route::post('users-store', 'UsersController@store')->name('users.store');
+Route::get('users-edit', 'UsersController@edit')->name('users.edit');
+Route::post('users-update', 'UsersController@update')->name('users.update');
+Route::post('users-delete', 'UsersController@delete')->name('users.delete');
 
 //courses
 Route::get('courses-list', 'CoursesController@index')->name('courses.list');
