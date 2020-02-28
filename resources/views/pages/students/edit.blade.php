@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container-fluid">
-    <form method="post" action="{{ route('students.update', $data->id) }}">
+    <form method="post" action="{{ route('courses.update', $data->id) }}">
 		<div class="row justify-content-center">
 		    <div class="col-md-6">
 		        <div class="card card-primary">

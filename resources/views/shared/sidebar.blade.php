@@ -48,7 +48,7 @@
         
 
         <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="{{route('courses.list')}}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Courses
@@ -66,12 +66,6 @@
               </p>
             </a>
         </li>
-
-      
-
-     
-        
-        
       </nav>
       <!-- /.sidebar-menu -->
     </div>

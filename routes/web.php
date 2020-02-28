@@ -36,11 +36,11 @@ Route::post('users-update/{id}', 'UsersController@update')->name('users.update')
 Route::post('users-delete/{id}', 'UsersController@destroy')->name('users.delete');
 
 //courses
-Route::get('courses-list', 'CoursesController@index')->name('courses.list');
-Route::get('courses-create', 'CoursesController@create')->name('courses.create');
-Route::post('courses-store', 'CoursesController@store')->name('courses.store');
-Route::get('courses-edit', 'CoursesController@edit')->name('courses.edit');
-Route::post('courses-update', 'CoursesController@update')->name('courses.update');
-Route::post('courses-delete', 'CoursesController@delete')->name('courses.delete');
+Route::get('courses-list', 'CourseController@index')->name('courses.list');
+Route::get('courses-create', 'CourseController@create')->name('courses.create');
+Route::post('courses-store', 'CourseController@store')->name('courses.store');
+Route::get('courses-edit/{id}', 'CourseController@edit')->name('courses.edit');
+Route::post('courses-update/{id}', 'CourseController@update')->name('courses.update');
+Route::post('courses-delete/{id}', 'CourseController@destroy')->name('courses.delete');
 
 
