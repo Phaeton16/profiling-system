@@ -27,7 +27,9 @@ class StudentsController extends Controller
         // dd($courses);
 
         return view ('pages.students.create',compact(['gender','courses', 'level']));
-        // ->with('courses',$courses);
+        // ->with('courses',$courses);\
+
+        
     }
     public function store(Request $request)
     {
@@ -42,21 +44,24 @@ class StudentsController extends Controller
     public function edit($id)
     {
         $data = Students::findOrFail($id);
-        return view ('pages.students.edit')
-                ->with('data',$data);
+        $gender = Genders::all();
+        $courses = Courses::all();
+        $level = Level::all();
+        // dd($data);
+        return view ('pages.students.edit',compact(['data','gender','courses', 'level']));
     }
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
-        Students::where('id', $id)->update();
+        Students::where('id', $id)->update($request->except(['_method','_token']));
         session()->flash('edit','Record Succesfully Edited. ');
-        return view ('pages.stduents.update');
-        return redirect('students.list');
+        return redirect()->route('students.list');
     }
-    public function delete($id)
+    public function destroy($id)
     {
-        $data = Students::findOFail($id);
+        $data = Students::findOrFail($id);
         $data->delete();
-        return view ('pages.students.delete');
+        session()->flash('edit','Record Succesfully Deleted. ');
+        return redirect()->route('students.list');
     }
     
 }

@@ -10,13 +10,12 @@ class UsersController extends Controller
 {
     public function index()
     {
-        $data = Users::get();
+        $data = Users::all();
         // dd($data);
         return view ('pages.users.index', compact('data'));
     }
     public function create(){
-        $email =Email::all();
-        $password = Password::all();
+        
 
         return view ('pages.users.create',compact(['email','password']));
         // ->with('courses',$courses);
