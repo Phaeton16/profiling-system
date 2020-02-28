@@ -31,9 +31,9 @@ Route::post('students-delete/{id}', 'StudentsController@destroy')->name('student
 Route::get('users-list', 'UsersController@index')->name('users.list');
 Route::get('users-create', 'UsersController@create')->name('users.create');
 Route::post('users-store', 'UsersController@store')->name('users.store');
-Route::get('users-edit', 'UsersController@edit')->name('users.edit');
-Route::post('users-update', 'UsersController@update')->name('users.update');
-Route::post('users-delete', 'UsersController@delete')->name('users.delete');
+Route::get('users-edit/{id}', 'UsersController@edit')->name('users.edit');
+Route::post('users-update/{id}', 'UsersController@update')->name('users.update');
+Route::post('users-delete/{id}', 'UsersController@destroy')->name('users.delete');
 
 //courses
 Route::get('courses-list', 'CoursesController@index')->name('courses.list');
