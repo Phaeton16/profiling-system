@@ -23,9 +23,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('students-list', 'StudentsController@index')->name('students.list');
 Route::get('students-create', 'StudentsController@create')->name('students.create');
 Route::post('students-store', 'StudentsController@store')->name('students.store');
-Route::get('students-edit', 'StudentsController@edit')->name('students.edit');
-Route::post('students-update', 'StudentsController@update')->name('students.update');
-Route::post('students-delete', 'StudentsController@delete')->name('students.delete');
+Route::get('students-edit/{id}', 'StudentsController@edit')->name('students.edit');
+Route::post('students-update/{id}', 'StudentsController@update')->name('students.update');
+Route::post('students-delete/{id}', 'StudentsController@destroy')->name('students.delete');
 
 //users
 Route::get('users-list', 'UsersController@index')->name('users.list');

@@ -19,6 +19,14 @@
     </div>
   </div>
 @endif
+@if(session()->has('delete'))
+  <div class="row" id="delete">
+    <div class="alert alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Notification:</strong>{{ session()->get('delete') }}
+    </div>
+  </div>
+@endif
 
 <div class="container-fluid">
   <div class="card">
@@ -41,6 +49,7 @@
               <tbody>
               @foreach($data ?? '' as $value)
                 <tr>
+                <input type="hidden" value = "{{$value->id}}">    
                   <td>{{$value->lname}},{{$value->fname}},{{$value->mname}}</td>
                   <td>{{$value->getLevels->name}}</td>
                   <td>{{$value->getCourses->name}}</td>
@@ -48,16 +57,17 @@
 
                     <div class="an-settings-button pull-right" style="border: transparent;">
 
-                   
-                    <a href="" class="btn btn-primary">
-                      <i class="fas fa-edit"></i>
-                      &nbsp;Edit
-                    </a>
+                      <a href="{{route('students.edit', $value->id) }}" class="btn btn-primary">
+                        <i class="fas fa-edit"></i>
+                        &nbsp;Edit
+                      </a>
+                      <form method="POST" action="{{route('students.delete', $value->id) }}">
+                          {{ csrf_field() }}
 
-                    <button class="btn btn-danger delete-news" >
-                      <i class="fas fa-trash"></i>
-                      &nbsp;Delete
-                    </button>
+                          <div class="form-group">
+                              <input type="submit" class="btn btn-danger delete-user" value="Delete user">
+                          </div>
+                      </form>
                   
                     </div>
                   </td>
