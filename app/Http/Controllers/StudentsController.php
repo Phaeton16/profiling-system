@@ -27,7 +27,9 @@ class StudentsController extends Controller
         // dd($courses);
 
         return view ('pages.students.create',compact(['gender','courses', 'level']));
-        // ->with('courses',$courses);
+        // ->with('courses',$courses);\
+
+        
     }
     public function store(Request $request)
     {
