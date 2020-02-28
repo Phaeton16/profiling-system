@@ -8,11 +8,11 @@ class Courses extends Model
 {
     protected $table = 'courses';
 
-    // protected $fillable = 'name';
+     protected $fillable = ['name'];
 
     public function courses()
     {
-        return $thhis->hasOne('App\Students','course_id');
+        return $this->hasOne('App\Students','course_id');
     }
 
 

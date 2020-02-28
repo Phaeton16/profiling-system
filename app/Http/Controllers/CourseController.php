@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Courses;
 
 class CourseController extends Controller
 {
     public function index()
     {
         $data = Courses::all();
-
         return view('pages.courses.index', compact('data'));
+        // return view('pages.courses.index');
     }
 
     public function create() 
@@ -23,7 +24,8 @@ class CourseController extends Controller
     {
         //data
 
-        Students::create($request->all());
+        Courses::create($request->all());
+        // dd($data);
 
         session()->flash('saved', 'Course is here!');
         return redirect()->route('courses.list');

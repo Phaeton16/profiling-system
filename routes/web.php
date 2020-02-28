@@ -29,11 +29,11 @@ Route::post('students-delete', 'StudentsController@delete')->name('students.dele
 
 
 //courses
-Route::get('courses-list', 'CoursesController@index')->name('courses.list');
-Route::get('courses-create', 'CoursesController@create')->name('courses.create');
-Route::post('courses-store', 'CoursesController@store')->name('courses.store');
-Route::get('courses-edit', 'CoursesController@edit')->name('courses.edit');
-Route::post('courses-update', 'CoursesController@update')->name('courses.update');
-Route::post('courses-delete', 'CoursesController@delete')->name('courses.delete');
+Route::get('courses-list', 'CourseController@index')->name('courses.list');
+Route::get('courses-create', 'CourseController@create')->name('courses.create');
+Route::post('courses-store', 'CourseController@store')->name('courses.store');
+Route::get('courses-edit', 'CourseController@edit')->name('courses.edit');
+Route::post('courses-update', 'CourseController@update')->name('courses.update');
+Route::post('courses-delete', 'CourseController@delete')->name('courses.delete');
 
 
