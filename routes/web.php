@@ -43,11 +43,5 @@ Route::get('courses-edit', 'CoursesController@edit')->name('courses.edit');
 Route::post('courses-update', 'CoursesController@update')->name('courses.update');
 Route::post('courses-delete', 'CoursesController@delete')->name('courses.delete');
 
-//address
-Route::get('address-list', 'AddressContoller@index')->name('address.list');
-Route::get('address-create', 'AddressContoller@create')->name('address.create');
-Route::post('address-store', 'AddressContoller@store')->name('address.store');
-Route::get('address-edit', 'AddressContoller@edit')->name('address.edit');
-Route::post('address-update', 'AddressContoller@update')->name('address.update');
-Route::post('address-delete', 'AddressContoller@delete')->name('address.delete');
+
 

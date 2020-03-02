@@ -51,10 +51,10 @@
         </div>
 
         <h1>Welcome to Foundation Preparatory Academy</h1>
-        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
+        <h2>We create <span class="rotating">beautiful memories, potential individuals, working facilities</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
-          <a href="#services" class="btn-services">Our Services</a>
+          <a href="#services" class="btn-services">FPA Aspects</a>
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#services">FPA Aspects</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#team">Team</a></li>
@@ -97,7 +97,7 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li> -->
-          <li><a href="#contact">Contact Us</a></li>
+          <!-- <li><a href="#contact">Contact Us</a></li> -->
           <li><a href="{{route('login')}}">Login</a></li>
         </ul>
       </nav>
@@ -151,7 +151,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">FPA's Life View</h3>
+          <h3 class="section-title">FPA Aspects</h3>
           <div class="section-title-divider"></div>
           <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         </div>
@@ -186,12 +186,12 @@
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-road"></i></div>
-          <h4 class="service-title"><a href="">Nemo Enim</a></h4>
+          <h4 class="service-title"><a href="">Activities</a></h4>
           <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
-          <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
+          <h4 class="service-title"><a href="">Organization</a></h4>
           <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
         </div>
       </div>
