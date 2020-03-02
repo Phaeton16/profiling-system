@@ -7,12 +7,12 @@ use App\Genders;
 use App\Courses;
 use App\Level;
 use App\Students;
-
+use App\Address;
 class StudentsController extends Controller
 {
     public function index()
     {
-        $data = Students::with(['getLevels','getCourses'])->get();
+        $data = Students::with(['getLevels','getCourses','getAddress'])->get();
                         // ->with('courses')
                         // ->get();
         // dd($data);
@@ -33,15 +33,16 @@ class StudentsController extends Controller
     }
     public function store(Request $request)
     {
-    //    dd($request->all());
-
-        Students::create($request->all());
-
+    //    dd($request->all())
+        $address= Address::create($request->except(['fname','mname','lname','gender_id','level_id','course_id','birth_date','student-id_number']));
+        $request['address_id']=$address->id;
+        Students::create($request->except(['purok','barangay','town','city','province','country']));
+        
         session()->flash('save', 'Record Successfully Saved. ');
         return redirect()->route('students.list');
 
     }
-    public function edit($id)
+    public function edit($id)   
     {
         $data = Students::findOrFail($id);
         $gender = Genders::all();

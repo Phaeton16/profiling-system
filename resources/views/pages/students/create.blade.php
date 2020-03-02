@@ -70,7 +70,32 @@
 	                            <option value="{{$g->id}}">{{$g->name}}</option>
 	                            @endforeach
 	                        </select>
-							</div>						
+							</div>			
+							<div class="form-group">
+								<label for="Purok"><i class="text-danger">*</i>Purok:</label>
+								<input type="text" class="form-control" name="purok" required/>
+							</div>			
+							<div class="form-group">
+								<label for="Barangay"><i class="text-danger">*</i>Barangay:</label>
+								<input type="text" class="form-control" name="barangay" required/>
+							</div>
+							<div class="form-group">
+								<label for="Town"><i class="text-danger">*</i>Town:</label>
+								<input type="text" class="form-control" name="town" required/>
+							</div>
+							<div class="form-group">
+								<label for="City"><i class="text-danger">*</i>City:</label>
+								<input type="text" class="form-control" name="city" required/>
+							</div>
+							<div class="form-group">
+								<label for="Province"><i class="text-danger">*</i>Province:</label>
+								<input type="text" class="form-control" name="province" required/>
+							</div>
+							<div class="form-group">
+								<label for="Country"><i class="text-danger">*</i>Country:</label>
+								<input type="text" class="form-control" name="country" required/>
+							</div>
+							
 							<div class="div" style="margin-top:20px">
 								<button type="submit" class="btn btn-primary float-left">Save</button>
 								<a type="button" href="{{ route('students.list') }}" class="btn btn-danger float-right">Cancel</a>
