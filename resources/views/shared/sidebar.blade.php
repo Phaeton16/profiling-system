@@ -38,7 +38,7 @@
 
 
                <li class="nav-item">
-                  <a href="{{route('address.list')}}" class="nav-link">
+                  <a href="{{route('students.list')}}" class="nav-link">
                       <i class="nav-icon fas fa-user"></i>
                       <p>
                           Students
@@ -57,15 +57,6 @@
             </a>
         </li>
 
-        <li class="nav-item has-treeview menu-open">
-            <a href="{{route('address.list')}}" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Address
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-        </li>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
