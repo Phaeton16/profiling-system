@@ -26,7 +26,7 @@
 						<div class="form-group">
 								@csrf
 								<label for="name"><i class="text-danger">*</i>Name:</label>
-								<input id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="email">
+								<input id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name">
 							</div>
 							<div class="form-group">
 								

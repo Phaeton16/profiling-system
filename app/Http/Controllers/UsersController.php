@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use App\User;
 
 
+
 class UsersController extends Controller
 {
     public function index()
@@ -20,13 +21,18 @@ class UsersController extends Controller
         $data = User::all();
         
 
-        return view ('pages.users.index', compact('data'));
-        // ->with('courses',$courses);
-        
+        return view ('pages.users.create', compact('data'));
+        {
+            return User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => Hash::make($data['password'])
+            ]);
+        }
     }
     public function store(Request $request)
     {
-    //    dd($request->all())
+    //    dd($request->all());
 
         // User::create($request->all());
         
