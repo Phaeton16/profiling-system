@@ -23,6 +23,8 @@ class CreateStudentsTable extends Migration
             $table->unsignedBigInteger('student_id_number');
             $table->unsignedBigInteger('course_id');
             $table->unsignedBigInteger('level_id');
+            $table->unsignedBigInteger('address_id');
+
             $table->timestamps();
 
             $table->foreign('gender_id')
@@ -36,6 +38,11 @@ class CreateStudentsTable extends Migration
             $table->foreign('level_id')
                 ->references('id')
                 ->on('levels');
+                
+            
+            $table->foreign('address_id')
+                ->references('id')
+                ->on('addresses');
         });
     }
 

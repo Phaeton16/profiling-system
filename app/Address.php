@@ -8,5 +8,5 @@ class Address extends Model
 {
     protected $table = 'addresses';
 
-    protected  $fillable = '[purok, barangay, city, town, province, country]';
+    protected  $fillable = ['students_id', 'purok', 'barangay', 'city', 'town', 'province', 'country'];
 }

@@ -43,6 +43,7 @@
                       <th>Name</th>
                       <th>Level</th>
                       <th>Course</th>
+                      <th>Address</th>
                       <th>Action</th>
                   </tr>
               </thead>
@@ -53,6 +54,7 @@
                   <td>{{$value->lname}},{{$value->fname}},{{$value->mname}}</td>
                   <td>{{$value->getLevels->name}}</td>
                   <td>{{$value->getCourses->name}}</td>
+                  <td>{{$value->getAddress->purok}},{{$value->getAddress->barangay}},{{$value->getAddress->town}},{{$value->getAddress->city}},{{$value->getAddress->province}},{{$value->getAddress->country}}</td>
                   <td class='text-right'>
 
                     <div class="an-settings-button pull-right" style="border: transparent;">
