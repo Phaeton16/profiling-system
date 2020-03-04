@@ -38,7 +38,7 @@
 
 
                <li class="nav-item">
-                  <a href="{{route('users.list')}}" class="nav-link">
+                  <a href="{{route('students.list')}}" class="nav-link">
                       <i class="nav-icon fas fa-user"></i>
                       <p>
                           Students
