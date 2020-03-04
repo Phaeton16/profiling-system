@@ -22,7 +22,7 @@
 							</ul>
 						</div><br />
 						@endif
-						<form method="post" action="{{ route('users.store') }}">
+						
 						<div class="form-group">
 								@csrf
 								<label for="name"><i class="text-danger">*</i>Name:</label>

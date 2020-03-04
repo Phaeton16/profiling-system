@@ -17,9 +17,10 @@ class UsersController extends Controller
         // return view ('pages.users.index');
     }
     public function create(){
+        $data = User::all();
         
 
-        return view ('pages.users.create');
+        return view ('pages.users.index', compact('data'));
         // ->with('courses',$courses);
         
     }
@@ -28,16 +29,12 @@ class UsersController extends Controller
     //    dd($request->all())
 
         // User::create($request->all());
-        User::create([
-            'name' => $request['name'],
-            'email' => $request['email'],
-            'password' => Hash::make($request['password']),
-        ]);
+        
+            User::create($request->all());
 
-        session()->flash('save', 'Record Successfully Saved. ');
-
-        return redirect()->route('users.list');
-
+            session()->flash('save', 'Record Successfully Saved. ');
+            return redirect()->route('users.list');
+    
     }
     public function edit($id)
     {

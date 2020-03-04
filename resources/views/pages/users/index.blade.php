@@ -32,6 +32,7 @@
           <table class="table table-bordered table-hover" id="users-table">
               <thead>
                   <tr class="text-center">
+                      <th> Name</th>
                       <th>Email</th>
                       <th>Password</th>
                       <th>Action</th>
@@ -40,8 +41,8 @@
               <tbody>
               @foreach($data ?? '' as $value)
                 <tr>
+                  <td>{{$value->name}}</td>
                   <td>{{$value->email}}</td>
-
                   <td>{{$value->password}}</td>
                   <td class='text-right'>
 
