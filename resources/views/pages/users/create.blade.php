@@ -3,12 +3,12 @@
 @section('content')
 
 <div class="container-fluid">
-    <form method="post" action="{{ route('testimony.store') }}">
+    <form method="post" action="{{ route('users.store') }}">
 		<div class="row justify-content-center">
 		    <div class="col-md-6">
 		        <div class="card card-primary">
 		            <div class="card-header">
-		                <h3 class="card-title">Testimonials</h3>
+		                <h3 class="card-title">User</h3>
 		            </div>
 		            <!-- /.card-header -->
 		            <!-- form start -->
@@ -22,18 +22,25 @@
 							</ul>
 						</div><br />
 						@endif
-						<form method="post" action="{{ route('testimony.store') }}">
-							<div class="form-group">
+						<form method="post" action="{{ route('users.store') }}">
+						<div class="form-group">
 								@csrf
-								<label for="name"><i class="text-danger">*</i>Title:</label>
-								<input type="text" class="form-control" name="title" required/>
+								<label for="name"><i class="text-danger">*</i>Name:</label>
+								<input id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="email">
 							</div>
 							<div class="form-group">
-								<label for="description"><i class="text-danger">*</i>Description:</label>
-								<textarea class="form-control" name="description" required></textarea>
+								
+								<label for="email"><i class="text-danger">*</i>Email address:</label>
+								<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 							</div>
+							<div class="form-group">
+								<label for=" Password"><i class="text-danger">*</i> Password:</label>
+								<input type="password" class="form-control" name="password" placeholder="Password">
+
+							</div>
+							
 							<button type="submit" class="btn btn-primary float-left">Save</button>
-							<a type="button" href="{{ route('testimony.index') }}" class="btn btn-danger float-right">Cancel</a>
+							<a type="button" href="{{ route('users.list') }}" class="btn btn-danger float-right">Cancel</a>
 		            </div>
 		            <!-- /.card-body -->
 		        </div>

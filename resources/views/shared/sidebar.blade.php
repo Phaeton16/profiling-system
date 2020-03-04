@@ -15,7 +15,7 @@
           <img src="{{ asset('img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="{{route('users.list')}}" class="d-block">Alexander Pierce</a>
         </div>
       </div>
 
@@ -27,7 +27,7 @@
 
 
                <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="{{route('users.list')}}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Users
@@ -38,7 +38,7 @@
 
 
                <li class="nav-item">
-                  <a href="{{route('students.list')}}" class="nav-link">
+                  <a href="{{route('users.list')}}" class="nav-link">
                       <i class="nav-icon fas fa-user"></i>
                       <p>
                           Students
