@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /*
 |--------------------------------------------------------------------------
@@ -42,5 +42,6 @@ Route::post('courses-store', 'CourseController@store')->name('courses.store');
 Route::get('courses-edit/{id}', 'CourseController@edit')->name('courses.edit');
 Route::post('courses-update/{id}', 'CourseController@update')->name('courses.update');
 Route::post('courses-delete/{id}', 'CourseController@destroy')->name('courses.delete');
+
 
 

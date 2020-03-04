@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="utf-8">
-  <title>Imperial Boootstrap Template</title>
+  <title>Foundation Preparatory Academy</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -51,10 +51,10 @@
         </div>
 
         <h1>Welcome to Foundation Preparatory Academy</h1>
-        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
+        <h2>We create <span class="rotating">beautiful memories, potential individuals, working facilities</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
-          <a href="#services" class="btn-services">Our Services</a>
+          <a href="#services" class="btn-services">FPA Aspects</a>
         </div>
       </div>
     </div>
@@ -76,11 +76,11 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">FPA Aspects</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
@@ -96,8 +96,8 @@
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
             </ul>
-          </li>
-          <li><a href="#contact">Contact Us</a></li>
+          </li> -->
+          <!-- <li><a href="#contact">Contact Us</a></li> -->
           <li><a href="{{route('login')}}">Login</a></li>
         </ul>
       </nav>
@@ -115,7 +115,7 @@
         <div class="col-md-12">
           <h3 class="section-title">About Us</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+          <p class="section-description">The Foundation Preparatory Academy nourish students from kinder to senior high school to become a better individual grow with great potential in the future of the society. </p>
         </div>
       </div>
     </div>
@@ -151,7 +151,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Our Services</h3>
+          <h3 class="section-title">FPA Aspects</h3>
           <div class="section-title-divider"></div>
           <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         </div>
@@ -160,32 +160,38 @@
       <div class="row">
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="">Lorem Ipsum</a></h4>
-          <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          <h4 class="service-title"><a href="">Vision</a></h4>
+          <p class="service-description">FPA longs to foster life learners by empowering students to acquire, develop, exhibit, communicate and value knowledge and skills that will support them in meeting the demands of the technologically and globally competitive status quo.</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="">Dolor Sitema</a></h4>
-          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          <h4 class="service-title"><a href="">Mission</a></h4>
+          <p class="service-description">To equip students with access to meaningful learning experiences for them to learn, excel, contribute and succeed in this constantly changing society thus allowing them to hone their fields of interest to become life-ready individuals.</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
-          <h4 class="service-title"><a href="">Sed ut perspiciatis</a></h4>
-          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          <h4 class="service-title"><a href="">Life Purpose</a></h4>
+          <p class="service-description">The life purpose of Foundation Preparatory Academy is to educate and develop individuals to become productive, creative, useful and responsible citizens of the society.</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-photo"></i></div>
-          <h4 class="service-title"><a href="">Magni Dolores</a></h4>
-          <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <h4 class="service-title"><a href="">Core Values</a></h4>
+          <br>
+          <ul class="service-description">
+            <li>Excellence</li>
+            <li>Commitment</li>
+            <li>Integrity</li>
+            <li>Service</li>
+          </ul>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-road"></i></div>
-          <h4 class="service-title"><a href="">Nemo Enim</a></h4>
+          <h4 class="service-title"><a href="">Activities</a></h4>
           <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
-          <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
+          <h4 class="service-title"><a href="">Organization</a></h4>
           <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
         </div>
       </div>
@@ -195,7 +201,7 @@
   <!--==========================
   Porfolio Section
   ============================-->
-  <section id="portfolio">
+  <!-- <section id="portfolio">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
@@ -280,7 +286,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--==========================
   Testimonials Section
@@ -405,7 +411,7 @@
   <!--==========================
   Contact Section
   ============================-->
-  <section id="contact">
+  <!-- <section id="contact">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
@@ -464,7 +470,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--==========================
   Footer
